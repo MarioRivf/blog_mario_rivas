@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RorJavascriptTechnicalInterview</title>
+    <title>Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <%= link_to 'Edit profile', edit_user_registration_path %>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+    <% else %>
+      <%= link_to 'Sign Up', new_user_registration_path %> |
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
