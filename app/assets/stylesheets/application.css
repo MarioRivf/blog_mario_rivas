@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  .navbar-brand {
+    font-weight: 700;
+    color: #007bff;
+  }
+  .nav-link {
+    font-weight: 400;
+  }
+  main {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    padding: 2rem;
+  }
+  footer {
+    background-color: #343a40;
+  }

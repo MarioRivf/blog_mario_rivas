@@ -69,7 +69,10 @@ class PostsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @post = Post.find_by(id: params[:id])
+      if @post.nil?
+        redirect_to posts_path, notice: "The post you're trying to access has been deleted."
+      end
     end
 
     # Only allow a list of trusted parameters through.
