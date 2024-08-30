@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :posts, dependent: :destroy
+
+  validates :email, presence: true
+  validates :password, presence: true
+  validates :password_confirmation, presence: true
 end
