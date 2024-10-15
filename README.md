@@ -1,11 +1,4 @@
-## Tarea Técnica: Posición Ruby on Rails + JavaScript
-
-### Objetivo:
-El candidato desarrollará una aplicación simple que demuestre su capacidad para trabajar con Ruby on Rails, tanto en el backend como en el frontend. La tarea está diseñada para evaluar sus habilidades en desarrollo full-stack, incluyendo diseño de API, gestión de bases de datos y desarrollo de interfaces de usuario.
-
-### Descripción de la Tarea:
-El candidato debe crear una aplicación de blog donde los usuarios puedan crear una cuenta, iniciar sesión y gestionar sus publicaciones. La aplicación debe incluir las siguientes funcionalidades:
-
+ Objetivo:
 #### Autenticación de Usuarios:
 - Implementar el registro, inicio de sesión y cierre de sesión de usuarios.
 - Usar Devise para la autenticación en Rails.
